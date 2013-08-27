@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: angular_rails_travis_ci_test
+  pool: 5
+  username: postgres

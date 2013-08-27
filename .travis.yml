@@ -8,6 +8,7 @@ env:
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate
   - bundle exec rake spec
+  - karma start --single-run
 
 before_script:
   - cp config/database.travis.yml config/database.yml

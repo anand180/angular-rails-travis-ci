@@ -15,6 +15,7 @@ before_script:
   - cp config/database.travis.yml config/database.yml
   - psql -c 'create database angular_rails_travis_ci_test' -U postgres
   - npm install -g grunt-cli
+  - npm install -g karma
   - cd angular
   - npm install
   - bower install

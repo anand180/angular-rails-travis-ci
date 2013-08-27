@@ -1,0 +1,16 @@
+{
+  "name": "angular-rails-travis-ci",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "bower": "~1.2.4"
+  }
+}

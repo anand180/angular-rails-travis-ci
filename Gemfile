@@ -37,6 +37,10 @@ group :test, :development do
   gem 'rspec-fire', '>= 1.2.0'
 end
 
+group :test do
+  gem 'rake'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

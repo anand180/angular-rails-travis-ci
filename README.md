@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/anand180/angular-rails-travis-ci.png?branch=master)](https://travis-ci.org/anand180/angular-rails-travis-ci)

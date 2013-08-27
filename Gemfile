@@ -35,11 +35,14 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'rspec-fire', '>= 1.2.0'
 end
 
 group :test do
   gem 'rake'
+  gem "shoulda-matchers"
+  gem 'rspec-fire', '>= 1.2.0'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password

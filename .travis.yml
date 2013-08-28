@@ -1,23 +1,23 @@
 language: ruby
 rvm:
-  - 1.9.3
-  
+- 1.9.3
 env:
+  matrix:
   - DB=postgresql
-
+  global:
+  - secure: NAalea5BR7BYjuGjH4QBN2Y9JMj2alhtgOvtBYlsAs7jncU1cLsau+I8D/D+a0lb0cTvhomcumsQpjS/UwRxmpmImgmEC4lV7MwMFRS7eExmTdjnlMCK/B8RHBF8b5lCtXsLGDP1Cxbez+UcsRP5k6bxWJimL9l1dzm4iEJLsYU=
+  - secure: G3Sea01mlaPHAl0zYGV15l6G0nYVK9c8Tyj8FpP013A31f5RnrB3G2boKf2mHYAr6h+l4IOxPFWrJcBtnzQDfun809tILh/r8ScQQ/LNovdLcH0zYT3vm0C658zTM+kvTU3UZfkMp3etrt0nv35AGDYudYyUogpxvmQH7Fy2ke0=
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate
-  - bundle exec rake spec
-  - cd angular
-  - karma start --single-run --browsers PhantomJS
-
+- RAILS_ENV=test bundle exec rake --trace db:migrate
+- bundle exec rake spec
+- cd angular
+- karma start --single-run --browsers PhantomJS
 before_script:
-  - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database angular_rails_travis_ci_test' -U postgres
-  - npm install -g grunt-cli
-  - npm install -g karma
-  - cd angular
-  - npm install
-  - bower install
-  - cd ..
-  
+- cp config/database.travis.yml config/database.yml
+- psql -c 'create database angular_rails_travis_ci_test' -U postgres
+- npm install -g grunt-cli
+- npm install -g karma
+- cd angular
+- npm install
+- bower install
+- cd ..

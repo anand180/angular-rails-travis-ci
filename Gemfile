@@ -28,6 +28,8 @@ gem 'turbolinks'
 # gem 'jbuilder', '~> 1.2'
 gem 'active_model_serializers', '>= 0.8.0'
 
+gem 'travis'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

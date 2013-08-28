@@ -12,6 +12,7 @@ script:
 - bundle exec rake spec
 - cd angular
 - karma start --single-run --browsers PhantomJS
+- node_modules/.bin/protractor myConf.js
 before_script:
 - cp config/database.travis.yml config/database.yml
 - psql -c 'create database angular_rails_travis_ci_test' -U postgres

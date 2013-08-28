@@ -33,6 +33,7 @@
   "devDependencies": {
     "karma-chrome-launcher": "~0.1.0",
     "karma-coffee-preprocessor": "~0.1.0",
-    "karma-phantomjs-launcher": "~0.1.0"
+    "karma-phantomjs-launcher": "~0.1.0",
+    "protractor": "~0.7.0"
   }
 }
